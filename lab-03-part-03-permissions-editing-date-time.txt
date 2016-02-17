@@ -18,7 +18,8 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 What command did you use, and what was its output?
 ----------
 
-
+ent-v314-005:other student$ date
+Wed Feb 17 11:51:14 EST 2016
 
 ==========
 2. Print out a calendar for this month.
@@ -26,6 +27,7 @@ What command did you use, and what was its output?
 What command did you use, and what was its output?
 ----------
 
+cal
 
 
 ==========
@@ -34,6 +36,7 @@ What command did you use, and what was its output?
 What commands did you use to do this?
 ----------
 
+ pwd
 
 
 ==========
@@ -42,7 +45,9 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+ent-v314-005:ShellScript student$ touch copy_to_backup.sh
+ent-v314-005:ShellScript student$ ls
+copy_to_backup.sh 
 
 ==========
 5. What are the permissions on your copy_to_backup.sh.
@@ -50,6 +55,8 @@ What commands did you use to do this?
 What command did you use to find the permissions?
 ----------
 
+ent-v314-005:ShellScript student$ ls -l copy_to_backup.sh
+-rw-r--r--  1 student  staff  0 Feb 17 11:52 copy_to_backup.sh
 
 
 ==========
@@ -58,6 +65,9 @@ What command did you use to find the permissions?
 What commands did you use to do this?  What was the output?
 ----------
 
+ent-v314-005:ShellScript student$ chmod u+x copy_to_backup.sh
+ent-v314-005:ShellScript student$ ls -l copy_to_backup.sh
+-rwxr--r--  1 student  staff  0 Feb 17 11:52 copy_to_backup.sh
 
 
 ==========
