@@ -78,7 +78,7 @@ $ ./copy_to_backup.sh
 What command did you use to try to execute the file?  What happens?
 ----------
 
-
+bash copy_to_backup.sh
 
 ==========
 8. Open the file with nano
@@ -86,6 +86,7 @@ What command did you use to try to execute the file?  What happens?
 What command did you use to do this?
 ----------
 
+nano copy_to_backup.sh
 
 
 ==========
@@ -98,6 +99,13 @@ c. print out "I'm done backing up"
 Write out the code in your file below...
 ----------
 
+GNU nano 2.0.6           File: copy_to_backup.sh                              
+#!/bin/bash
+
+echo "Hello World!"
+mkdir -p Backup
+cp *.txt Backup
+echo "Finished backing up"
 
 
 ==========
@@ -109,7 +117,7 @@ Write out the code in your file below...
 What commands did you use to do this?
 ----------
 
-
+touch 1.txt 2.txt
 
 ==========
 12. Move the script that you created into this directory.
@@ -117,7 +125,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+mv copy_to_backup.sh Backup
 
 ==========
 13. Run your script.
@@ -125,6 +133,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
+bash copy_to_backup.sh
 
 
 ==========
@@ -132,3 +141,9 @@ What commands did you use to do this?
 
 What commands did you use to do this?  Show the output.
 ----------
+ent-v314-005:ShellScript student$ cd Backup
+ent-v314-005:Backup student$ ls -l
+total 0
+-rw-r--r--  1 student  staff  0 Feb 17 12:26 bar.txt
+-rw-r--r--  1 student  staff  0 Feb 17 12:26 baz.txt
+-rw-r--r--  1 student  staff  0 Feb 17 12:26 foo.txt
